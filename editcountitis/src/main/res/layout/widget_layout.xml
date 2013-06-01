@@ -8,8 +8,8 @@
               android:layout_height="72dp">
 
     <TextView android:id="@+id/count_alledits"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
               android:layout_gravity="center"
               style="@android:style/TextAppearance.Large"
             />
