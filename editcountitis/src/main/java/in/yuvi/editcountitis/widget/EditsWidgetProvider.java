@@ -34,8 +34,7 @@ public class EditsWidgetProvider extends AppWidgetProvider {
         Log.d(TAG, "Hello?");
 
         // Build the intent to call the service
-        Intent intent = new Intent(context.getApplicationContext(),
-                EditsWidgetUpdaterService.class);
+        Intent intent = new Intent(context.getApplicationContext(), EditsWidgetUpdaterService.class);
         intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, allWidgetIds);
 
         // Update the widgets via the service

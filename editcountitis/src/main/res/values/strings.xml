@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Editcountitis</string>
+    <string name="pref_username">Username</string>
+    <string name="pref_username_desc">Your Wikimedia Username</string>
 </resources>

@@ -36,11 +36,10 @@ public class EditsWidgetUpdaterService extends Service {
         final AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(this
                 .getApplicationContext());
 
-        int[] allWidgetIds = intent
-                .getIntArrayExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS);
+        int[] allWidgetIds = intent.getIntArrayExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS);
 
         ComponentName thisWidget = new ComponentName(getApplicationContext(),EditsWidgetProvider.class);
-       
+
         RequestQueue queue = Volley.newRequestQueue(this);
 
         for (final int widgetId : allWidgetIds) {
