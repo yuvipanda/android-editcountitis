@@ -15,6 +15,7 @@ public class SettingsActivity extends PreferenceActivity {
         addPreferencesFromResource(R.xml.prefs);
     }
 
+    // Not super legit, but works. onStop is 'too late', so not sure how exactly to do this...
     @Override
     public void finish() {
         int widgetId;
